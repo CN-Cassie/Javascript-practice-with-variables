@@ -1,0 +1,109 @@
+<!DOCTYPE html> <html><head>
+        <title>Javascript practice  with variables</title>
+        <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <style>h1, p, h2{
+    text-align:center;
+}
+.button {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color:yellow;
+    font-family: 'Aldrich';font-size: 22px;
+}
+
+.section{
+    background-color:black;
+    padding:5px;
+    color:white;
+    margin:5px;
+}
+
+button{
+     width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: block;
+    margin: 20px auto;
+}
+
+img{
+    width:200px;
+}
+
+h2{
+    font-size:20px;
+}
+
+.answer-one{
+    border:5px black solid;
+    padding:5px;
+    display:none;
+}
+
+.answer-two{
+    border:5px black solid;
+    padding:5px;
+    display:none;
+}
+
+.answer-three{
+    border:5px black solid;
+    padding:5px;
+    display:none;
+}</style></head>
+    <body>
+        <h1>Tech Usage Information! </h1>
+        <h2>Click on the difrent sections to learn about the role tech usage plays in our lives!</h2>
+      
+        <div class="section">
+        <p>How much time does the average person spend online/in front of a screen?</p>
+        <button class="button-one">Click to learn more! </button>
+        </div>
+        <div class="answer-one">According to one study, the average person spends about 9 hours of their day looking at a screen. That's more than 1/3 of their day!</div>
+        <div class="section">
+        <p>Why does tech feel so addicting?</p>
+        <button class="button-two">Click to learn more! </button>
+        </div>
+        <div class="answer-two">Things like autoplay, notifications, and the way tech is designed make it more engaging to use and get us hooked!</div>
+        <div class="section">
+        <p>What can I do if I feel I'm using my phone too much?</p>
+        <button class="button-three">Click to learn more! </button>
+        </div>
+        <div class="answer-three">Consider trying to limit the 'passive' ways you use tech(like having videos constantly come on on autoplay. Consider also finding momenets in the day to do other fun activities like meeting with friends, reading or taking walks/exercising if you can.</div>
+      
+    
+<script>
+/*__POPCODESTART__*/
+var firstButton = document.querySelector(".button-one");
+var secondButton = document.querySelector(".button-two");
+var thirdButton = document.querySelector(".button-three");
+var firstAnswer = document.querySelector(".answer-one");
+var secondAnswer = document.querySelector(".answer-two");
+var thirdAnswer = document.querySelector(".answer-three");
+/* 1: Let's make the click handler below together!*/
+
+firstButton.onclick = function () {
+  firstAnswer.style.display = "block";
+};
+/* 2: Try to make it so that when you click the second button, an answer to the second question will appear*/
+
+
+secondButton.onclick = function () {
+  secondAnswer.style.display = "block";
+};
+/* 3: Try to make the whole click handler for the third section! Make it so that when the user click the third button, an answer will appear! 
+
+
+
+*/
+
+
+thirdButton.onclick = function () {
+  thirdAnswer.style.display = "block";
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImZpcnN0QnV0dG9uIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwic2Vjb25kQnV0dG9uIiwidGhpcmRCdXR0b24iLCJmaXJzdEFuc3dlciIsInNlY29uZEFuc3dlciIsInRoaXJkQW5zd2VyIiwib25jbGljayIsInN0eWxlIiwiZGlzcGxheSJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsV0FBVyxHQUFDQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsQ0FBaEI7QUFDQSxJQUFJQyxZQUFZLEdBQUNGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixhQUF2QixDQUFqQjtBQUNBLElBQUlFLFdBQVcsR0FBQ0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLGVBQXZCLENBQWhCO0FBQ0EsSUFBSUcsV0FBVyxHQUFDSixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsQ0FBaEI7QUFDQSxJQUFJSSxZQUFZLEdBQUNMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixhQUF2QixDQUFqQjtBQUNBLElBQUlLLFdBQVcsR0FBQ04sUUFBUSxDQUFDQyxhQUFULENBQXVCLGVBQXZCLENBQWhCO0FBRUE7O0FBQ0FGLFdBQVcsQ0FBQ1EsT0FBWixHQUFvQixZQUFVO0FBQzFCSCxFQUFBQSxXQUFXLENBQUNJLEtBQVosQ0FBa0JDLE9BQWxCLEdBQTBCLE9BQTFCO0FBQ0gsQ0FGRDtBQU1BOzs7QUFDQVAsWUFBWSxDQUFDSyxPQUFiLEdBQXFCLFlBQVU7QUFDM0JGLEVBQUFBLFlBQVksQ0FBQ0csS0FBYixDQUFtQkMsT0FBbkIsR0FBMkIsT0FBM0I7QUFDSCxDQUZEO0FBS0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7O0FBQ0FOLFdBQVcsQ0FBQ0ksT0FBWixHQUFvQixZQUFVO0FBQzFCRCxFQUFBQSxXQUFXLENBQUNFLEtBQVosQ0FBa0JDLE9BQWxCLEdBQTBCLE9BQTFCO0FBQ0gsQ0FGRCIsInNvdXJjZXNDb250ZW50IjpbImxldCBmaXJzdEJ1dHRvbj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmJ1dHRvbi1vbmVcIik7XG5sZXQgc2Vjb25kQnV0dG9uPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYnV0dG9uLXR3b1wiKTtcbmxldCB0aGlyZEJ1dHRvbj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmJ1dHRvbi10aHJlZVwiKTtcbmxldCBmaXJzdEFuc3dlcj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmFuc3dlci1vbmVcIik7XG5sZXQgc2Vjb25kQW5zd2VyPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYW5zd2VyLXR3b1wiKTtcbmxldCB0aGlyZEFuc3dlcj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmFuc3dlci10aHJlZVwiKTtcblxuLyogMTogTGV0J3MgbWFrZSB0aGUgY2xpY2sgaGFuZGxlciBiZWxvdyB0b2dldGhlciEqL1xuZmlyc3RCdXR0b24ub25jbGljaz1mdW5jdGlvbigpe1xuICAgIGZpcnN0QW5zd2VyLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xufTtcblxuXG5cbi8qIDI6IFRyeSB0byBtYWtlIGl0IHNvIHRoYXQgd2hlbiB5b3UgY2xpY2sgdGhlIHNlY29uZCBidXR0b24sIGFuIGFuc3dlciB0byB0aGUgc2Vjb25kIHF1ZXN0aW9uIHdpbGwgYXBwZWFyKi9cbnNlY29uZEJ1dHRvbi5vbmNsaWNrPWZ1bmN0aW9uKCl7XG4gICAgc2Vjb25kQW5zd2VyLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xufTtcblxuXG4vKiAzOiBUcnkgdG8gbWFrZSB0aGUgd2hvbGUgY2xpY2sgaGFuZGxlciBmb3IgdGhlIHRoaXJkIHNlY3Rpb24hIE1ha2UgaXQgc28gdGhhdCB3aGVuIHRoZSB1c2VyIGNsaWNrIHRoZSB0aGlyZCBidXR0b24sIGFuIGFuc3dlciB3aWxsIGFwcGVhciEgXG5cblxuXG4qL1xudGhpcmRCdXR0b24ub25jbGljaz1mdW5jdGlvbigpe1xuICAgIHRoaXJkQW5zd2VyLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xufTtcblxuXG4iXX0=</script></body></html>
