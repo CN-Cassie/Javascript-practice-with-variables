@@ -1,1 +1,0 @@
-# Javascript-practice-with-variables
